@@ -3,77 +3,402 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beauty Salon</title>
-    <link rel="stylesheet" href="style.css" />
+   
+      
+   
+   
+    <title>GlowBeauty - Beauty Salon</title>
+    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" media="all" />
+
+    <!-- Custom Styles -->
+     
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <div class="container">
-        <nav>
-          <h1 class="logo">GlowBeauty</h1>
-          <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#contact">Book Appointment</a></li>
-          </ul>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand fw-bold text-white" href="#">GlowBeauty</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            width="100%"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="appointment.html"
+                  >Book Appointment</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
+    
 
+    <!-- Hero Section with Carousel -->
     <section class="hero">
-      <div class="container">
-        <h2>Experience Beauty Like Never Before</h2>
-        <p>Your beauty is our duty. Feel fabulous with our expert services.</p>
-        <a href="#services" class="btn">Explore Services</a>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="istockphoto-947081568-2048x2048-transformed.webp"
+              class="d-block w-100"
+              alt="Beauty Slide 1"
+            />
+            <div class="carousel-caption">
+              <h3>Glow Like Never Before</h3>
+              <p>Experience beauty that speaks for itself.</p>
+              <a href="#services" class="btn btn-carousel">Explore Services</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="istockphoto-1147811612-2048x2048-transformed.webp"
+              class="d-block w-100"
+              alt="Beauty Slide 2"
+            />
+            <div class="carousel-caption">
+              <h3>Luxury Treatments</h3>
+              <p>Indulge in our premium skincare and haircare services.</p>
+              <a href="#about" class="btn btn-carousel">Learn More</a>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <img
+              src="istockphoto-899104458-2048x2048-transformed.webp"
+              class="d-block w-100"
+              alt="Beauty Slide 3"
+            />
+            <div class="carousel-caption">
+              <h3>Book Your Appointment Today</h3>
+              <p>Let our professionals bring out the best in you.</p>
+              <a href="appointment.html" class="btn btn-carousel">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
 
+    <!-- Services Section -->
     <section id="services" class="services">
       <div class="container">
-        <h2>Our Services</h2>
-        <div class="service-list">
-          <div class="service-item">
-            <h3>Hair Styling</h3>
-            <p>Get the latest hair trends from professional stylists.</p>
+        <h2 class="text-center mb-4 text-uppercase">Our Services</h2>
+        <div class="row">
+          <!-- Service 1 -->
+          <div class="col-md-4">
+            <div class="card service-card">
+              <img
+                src="https://th.bing.com/th/id/OIP.OEWbnhrvgESPRVC3MXaOSAHaGL?w=203&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                class="card-img-top"
+                alt="Service 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Facial Treatments</h5>
+                <p class="card-text">
+                  Experience rejuvenating facial treatments tailored to your
+                  skin type.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="service-item">
-            <h3>Facial Treatments</h3>
-            <p>Relax and rejuvenate your skin with our luxury facials.</p>
+          <!-- Service 2 -->
+          <div class="col-md-4">
+            <div class="card service-card">
+              <img
+                src="https://th.bing.com/th/id/OIP.EGXd0uo09JTXp1bGthTxbgHaJE?w=135&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                class="card-img-top"
+                alt="Service 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Makeup Artistry</h5>
+                <p class="card-text">
+                  Professional makeup services for any occasion, including
+                  bridal and event makeup.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="service-item">
-            <h3>Manicure & Pedicure</h3>
+          <!-- Service 3 -->
+          <div class="col-md-4">
+            <div class="card service-card">
+              <img
+                src="https://th.bing.com/th/id/OIP.V3NSXN4jKtzOt0ax5mnjmwHaE4?w=257&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                class="card-img-top"
+                alt="Service 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hair Styling</h5>
+                <p class="card-text">
+                  Get the perfect hairstyle for your special day or a new look!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 text-uppercase">About Us</h2>
+        <div class="row align-items-center">
+          <!-- Image -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img
+              src="istockphoto-621502934-2048x2048-transformed.webp"
+              class="img-fluid rounded shadow"
+              alt="Our Team"
+            />
+          </div>
+          <!-- Content -->
+          <div class="col-md-6">
+            <h3 class="text-pink-dark">Who We Are</h3>
             <p>
-              Perfect nails, every time. Treat your hands and feet to some TLC.
+              At GlowBeauty, we are passionate about enhancing natural beauty and
+              bringing out the best version of you. With years of experience in the
+              beauty industry, our skilled professionals offer premium services in
+              skincare, makeup, and haircare.
+            </p>
+            <h3 class="text-pink-dark">Our Mission</h3>
+            <p>
+              Our mission is to empower individuals by providing exceptional beauty
+              treatments that rejuvenate and uplift. Every client is unique, and we
+              strive to create personalized experiences that leave you feeling
+              confident and radiant.
+            </p>
+            <h3 class="text-pink-dark">Why Choose Us?</h3>
+            <ul>
+              <li>Experienced and certified beauty experts.</li>
+              <li>High-quality products and cutting-edge techniques.</li>
+              <li>A relaxing and welcoming salon environment.</li>
+              <li>Customized treatments tailored to your needs.</li>
+            </ul>
+            <a href="appointment.html" class="btn btn-pink mt-3">Book an Appointment</a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Our Team Section -->
+<div class="team-section py-5">
+  <h2 class="text-center mb-4 text-uppercase">Meet Our Team</h2>
+  <p class="text-center text-white mb-5">
+    Our talented team of professionals dedicated to your beauty and wellness.
+  </p>
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- Team Member 1 -->
+      <div class="col-md-4 col-lg-3 mb-4">
+        <div class="team-card">
+          <div class="team-img">
+            <img
+              src="https://images.pexels.com/photos/29540819/pexels-photo-29540819/free-photo-of-stylish-portrait-of-a-woman-in-leather-jacket.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Jane Doe"
+              class="img-fluid rounded-circle"
+            />
+          </div>
+          <div class="team-info text-center mt-3">
+            <h5 class="text-white">Jane Doe</h5>
+            <p class="text-pink-light">Lead Makeup Artist</p>
+          </div>
+          <div class="team-hover">
+            <p class="text-white">
+              Specializes in bridal and editorial makeup with over 10 years of
+              experience.
             </p>
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>
-          GlowBeauty Salon has been a trusted name in beauty care for over a
-          decade. Our professional team of experts is dedicated to making you
-          look and feel your best. From hair styling to skin treatments, we
-          offer a wide range of services tailored to your unique needs.
-        </p>
-      </div>
-    </section>
-
-    <footer id="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <p>Email: info@glowbeauty.com | Phone: +123 456 7890</p>
-        <p>Follow us on:</p>
-        <div class="social-icons">
-          <a href="#">Facebook</a> | <a href="#">Instagram</a> |
-          <a href="#">Twitter</a>
+      <!-- Team Member 2 -->
+      <div class="col-md-4 col-lg-3 mb-4">
+        <div class="team-card">
+          <div class="team-img">
+            <img
+              src="https://images.pexels.com/photos/14983798/pexels-photo-14983798/free-photo-of-a-man-with-curly-hair-leaning-against-a-wall.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="John Smith"
+              class="img-fluid rounded-circle"
+            />
+          </div>
+          <div class="team-info text-center mt-3">
+            <h5 class="text-white">John Smith</h5>
+            <p class="text-pink-light">Hair Stylist Specialist</p>
+          </div>
+          <div class="team-hover">
+            <p class="text-white">
+              Expert in modern haircuts, coloring, and styling for all occasions.
+            </p>
+          </div>
         </div>
       </div>
+      <!-- Team Member 3 -->
+      <div class="col-md-4 col-lg-3 mb-4">
+        <div class="team-card">
+          <div class="team-img">
+            <img
+              src="https://images.pexels.com/photos/3760954/pexels-photo-3760954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Emily Johnson"
+              class="img-fluid rounded-circle"
+            />
+          </div>
+          <div class="team-info text-center mt-3">
+            <h5 class="text-white">Emily Johnson</h5>
+            <p class="text-pink-light">Skincare Expert</p>
+          </div>
+          <div class="team-hover">
+            <p class="text-white">
+              Focused on advanced skincare treatments and customized routines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Contact Information -->
+          <div class="col-md-3">
+            <p></p>Contact Us</p>
+            <p>Trendy MakeOver™ Salon</p>
+            <p>F90, 1st Floor, Karnataka Bank,</p>
+            <p>Lajpat Nagar-2, New Delhi – 110024</p>
+            <p><strong>Phone:</strong> 011-4143 6789</p>
+            <p><strong>Email:</strong> <a href="mailto:info@makeoversalons.com">info@makeoversalons.com</a></p>
+          </div>
+    
+          <!-- Services Offered -->
+          <div class="col-md-3">
+            
+              <p>Our Services</p>
+              <p>HairCut & HairStyle</p>
+              <p>Hair Treatment & Hair Spa</p>
+              <p>Makeup & Beauty Services</p>
+              <p>Hair Texture</p>
+              <p>Massage Therapies</p>
+            
+          </div>
+    
+          <!-- More Section with Links -->
+          <div class="col-md-3">
+              <p><a href="#about">About</a></li></p>
+              <p><a href="#services">Services</a></p>
+             <p> <a href="#gallery">Gallery</a></p>
+              <p><a href="#contact">Contact</a></p>
+              <p><a href="appointment.html">Book</a></p>
+              <p><a href="#team">Team</a></p>
+          </div>
+    
+          <!-- Working Hours -->
+          <div class="col-md-3">
+            
+            <ul>
+              <p>Working Hours</p>
+              <li>Monday:  10:30 AM - 9:00 PM</li>
+              <li>Tuesday: 10:30 AM - 9:00 PM</li>
+              <li>Wednesday: 10:30 AM - 9:00 PM</li>
+              <li>Thursday: 10:30 AM - 9:00 PM</li>
+              <li>Friday: 10:30 AM - 9:00 PM</li>
+              <li>Saturday: 10:30 AM - 9:00 PM</li>
+              <li>Sunday:10:30 AM - 9:00 PM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+        <hr>
+    
+        <!-- Social Icons and Rights Reserved -->
+        <div class="social-icons text-center mt-3">
+          <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+    
+        <p class="text-center mt-3">© 2024 Trendy MakeOver™ Salon. All rights reserved.</p>
+      
     </footer>
+    
+    
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
   </body>
 </html>

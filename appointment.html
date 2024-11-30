@@ -1,11 +1,10 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Glow Beauty</title>
+  <title>Book Appointment - Glow Beauty</title>
+  
   <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
   <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -34,7 +33,7 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Home</a>
+              <a class="nav-link text-white" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#services">Services</a>
@@ -55,52 +54,69 @@
       </nav>
     </div>
   </header>
-  
 
-  <section id="about" class="about py-5 mt-4">
+  <section class="appointment py-5 mt-5">
     <div class="container">
-      <h2 class="text-center mb-4 text-uppercase">About Us</h2>
-      <div class="row align-items-center">
-        <!-- Image -->
-        <div class="col-md-6 mb-4 mb-md-0">
-          <img
-            src="istockphoto-621502934-2048x2048-transformed.webp"
-            class="img-fluid rounded shadow"
-            alt="Our Team"
-          />
+      <h2 class="text-center text-primary mb-4">Book an Appointment</h2>
+      <form action="#" method="POST">
+        <!-- Row 1: Name and Email -->
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
         </div>
-        <!-- Content -->
-        <div class="col-md-6">
-          <h3 class="text-pink-dark">Who We Are</h3>
-          <p>
-            At GlowBeauty, we are passionate about enhancing natural beauty and
-            bringing out the best version of you. With years of experience in the
-            beauty industry, our skilled professionals offer premium services in
-            skincare, makeup, and haircare.
-          </p>
-          <h3 class="text-pink-dark">Our Mission</h3>
-          <p>
-            Our mission is to empower individuals by providing exceptional beauty
-            treatments that rejuvenate and uplift. Every client is unique, and we
-            strive to create personalized experiences that leave you feeling
-            confident and radiant.
-          </p>
-          <h3 class="text-pink-dark">Why Choose Us?</h3>
-          <ul>
-            <li>Experienced and certified beauty experts.</li>
-            <li>High-quality products and cutting-edge techniques.</li>
-            <li>A relaxing and welcoming salon environment.</li>
-            <li>Customized treatments tailored to your needs.</li>
-          </ul>
-          <a href="appointment.html" class="btn btn-pink mt-3">Book an Appointment</a>
+  
+        <!-- Row 2: Phone Number and Preferred Time -->
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="preferred-time" class="form-label">Preferred Time</label>
+            <input type="time" class="form-control" id="preferred-time" name="preferred-time" required>
+          </div>
         </div>
-      </div>
-      
+  
+        <!-- Row 3: Service Selection -->
+        <div class="mb-3">
+          <label for="service" class="form-label">Choose a Service</label>
+          <select class="form-control" id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option>Hair Styling</option>
+            <option>Facial Treatments</option>
+            <option>Manicure & Pedicure</option>
+          </select>
+        </div>
+  
+        <!-- Row 4: Preferred Date -->
+        <div class="mb-3">
+          <label for="date" class="form-label">Preferred Date</label>
+          <input type="date" class="form-control" id="date" name="date" required>
+        </div>
+  
+        <!-- Row 5: Additional Message -->
+        <div class="mb-3">
+          <label for="message" class="form-label">Additional Message (Optional)</label>
+          <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+        </div>
+  
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
     </div>
   </section>
+  
 
-
-  <footer class="footer">
+   <!-- Footer Section -->
+   <footer class="footer">
     <div class="container">
       <div class="row">
         <!-- Contact Information -->
@@ -165,4 +181,3 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
