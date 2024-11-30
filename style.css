@@ -313,10 +313,6 @@ color: #ff99cc;
 /* team */
 
 .team-section {
-/* background: linear-gradient(rgba(30, 30, 30, 0.9), rgba(50, 50, 50, 0.9)),
-url("https://images.pexels.com/photos/5128267/pexels-photo-5128267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
-/* background: linear-gradient(rgba(30, 30, 30, 0.9), rgba(50, 50, 50, 0.9)),
-url("https://images.pexels.com/photos/5128259/pexels-photo-5128259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
 background: linear-gradient(rgba(30, 30, 30, 0.9), rgba(50, 50, 50, 0.9)),
 url("https://images.pexels.com/photos/3750640/pexels-photo-3750640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 background-size: cover;
@@ -397,13 +393,6 @@ top: 0;
 font-size: 1rem;
 line-height: 1.5;
 }
-
-/* contact */
-#contact{
-   padding: 80px;
-}
-
-
 
 
 /* footer */
