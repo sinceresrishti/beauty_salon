@@ -36,10 +36,13 @@
               <a class="nav-link text-white" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#services">Services</a>
+              <a class="nav-link text-white" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#about">About</a>
+              <a class="nav-link text-white" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="team.html">Team</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="contact.html">Contact</a>
@@ -49,23 +52,26 @@
                 >Book Appointment</a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="login.html">login</a>
+            </li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
 
-  <section class="appointment py-5 mt-5">
+  <section class="appointment py-5 mt-5" style="background-color: beige">
     <div class="container">
-      <h2 class="text-center text-primary mb-4">Book an Appointment</h2>
+      <h2 class="text-center mb-4 fw-bold" style="color: black">Book an Appointment</h2>
       <form action="#" method="POST">
         <!-- Row 1: Name and Email -->
         <div class="row">
-          <div class="col-md-6 mb-3">
+          <div class="col-md-6 mb-3 fw-bold">
             <label for="name" class="form-label">Full Name</label>
             <input type="text" class="form-control" id="name" name="name" required>
           </div>
-          <div class="col-md-6 mb-3">
+          <div class="col-md-6 mb-3 fw-bold">
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" name="email" required>
           </div>
@@ -73,18 +79,18 @@
   
         <!-- Row 2: Phone Number and Preferred Time -->
         <div class="row">
-          <div class="col-md-6 mb-3">
+          <div class="col-md-6 mb-3 fw-bold">
             <label for="phone" class="form-label">Phone Number</label>
             <input type="tel" class="form-control" id="phone" name="phone" required>
           </div>
-          <div class="col-md-6 mb-3">
+          <div class="col-md-6 mb-3 fw-bold">
             <label for="preferred-time" class="form-label">Preferred Time</label>
             <input type="time" class="form-control" id="preferred-time" name="preferred-time" required>
           </div>
         </div>
   
         <!-- Row 3: Service Selection -->
-        <div class="mb-3">
+        <div class="mb-3 fw-bold">
           <label for="service" class="form-label">Choose a Service</label>
           <select class="form-control" id="service" name="service" required>
             <option value="" disabled selected>Select a service</option>
@@ -96,13 +102,13 @@
   
         <!-- Row 4: Preferred Date -->
         <div class="mb-3">
-          <label for="date" class="form-label">Preferred Date</label>
+          <label for="date" class="form-label fw-bold">Preferred Date</label>
           <input type="date" class="form-control" id="date" name="date" required>
         </div>
   
         <!-- Row 5: Additional Message -->
         <div class="mb-3">
-          <label for="message" class="form-label">Additional Message (Optional)</label>
+          <label for="message" class="form-label fw-bold">Additional Message (Optional)</label>
           <textarea class="form-control" id="message" name="message" rows="3"></textarea>
         </div>
   
