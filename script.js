@@ -57,7 +57,8 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   }
 
   alert("Your message has been sent successfully!");
-  document.getElementById("contactForm").reset(); // Clear the form
+
+  window.location.href = "index.html";
 });
 
 // Email Validation Function
@@ -65,3 +66,5 @@ function validateEmail(email) {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regex.test(email);
 }
+
+
